@@ -4,9 +4,9 @@ import { HiSun } from "react-icons/hi";
 import { IoMoon } from "react-icons/io5";
 
 export default function DarkModeToggle() {
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
 
-  const isDark = theme === "dark";
+  const isDark = resolvedTheme === "dark";
 
   const [mounted, setMounted] = useState(false);
 
