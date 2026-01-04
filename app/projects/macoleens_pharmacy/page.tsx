@@ -37,6 +37,7 @@ const imagesSource = [
     },
     pharmacist: {
       sources: [
+        "/project-images/pharmacist/dashboard.png",
         "/project-images/pharmacist/pos.png",
         "/project-images/pharmacist/printing-order.png",
       ],
