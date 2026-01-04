@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "./components/theme-provider";
+import Link from "next/link";
 
 const roboto = Roboto({
   weight: ["300", "400", "500", "700"],
@@ -24,7 +25,20 @@ export default function RootLayout({
       <body
         className={`${roboto.variable} antialiased max-w-230 mx-auto min-h-screen font-sans px-4`}
       >
-        <ThemeProvider>{children}</ThemeProvider>
+        <ThemeProvider>
+          {children}
+          <footer className="border-t mt-18 flex items-center justify-center pt-8 pb-4">
+            <p className="text-sm font-medium flex flex-col items-center gap-2">
+              © 2026 Jelmar Rapis. All rights reserved.
+              <span className="font-normal">
+                This portfolio website is inspired by{" "}
+                <Link href="https://bryllim.com/" className="underline">
+                  Bryl Lim.
+                </Link>
+              </span>
+            </p>
+          </footer>
+        </ThemeProvider>
       </body>
     </html>
   );

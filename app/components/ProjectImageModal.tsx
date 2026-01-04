@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import { useEffect } from "react";
 import { IoMdClose } from "react-icons/io";
 
 interface ProjectImageModalProps {
@@ -10,6 +11,20 @@ interface ProjectImageModalProps {
 }
 
 const ProjectImageModal = ({ src, onClose }: ProjectImageModalProps) => {
+  useEffect(() => {
+    const handleEsc = (e: KeyboardEvent) => {
+      if (e.key === "Escape") {
+        onClose();
+      }
+    };
+
+    document.addEventListener("keydown", handleEsc);
+
+    return () => {
+      document.removeEventListener("keydown", handleEsc);
+    };
+  }, [onClose]);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}

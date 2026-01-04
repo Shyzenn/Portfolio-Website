@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -70,24 +69,6 @@ export default function Home() {
       >
         <Contact />
       </motion.section>
-
-      <motion.footer
-        className="border-t mt-18 flex items-center justify-center pt-8 pb-4"
-        initial="hidden"
-        animate="visible"
-        variants={fadeUp}
-        transition={{ duration: 0.6, delay: 0.6 }}
-      >
-        <p className="text-sm font-medium flex flex-col items-center gap-2">
-          © 2026 Jelmar Rapis. All rights reserved.
-          <span className="font-normal">
-            This portfolio website is inspired by{" "}
-            <Link href="https://bryllim.com/" className="underline">
-              Bryl Lim.
-            </Link>
-          </span>
-        </p>
-      </motion.footer>
     </main>
   );
 }
