@@ -105,7 +105,7 @@ const MacoleensPharmacy = () => {
           className="border-b pb-12"
         >
           <h3 className="text-xl font-semibold mb-4">Pages</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center items-center gap-4">
             {imagesSource[0].pages.sources.map((src, index) => (
               <ImageButton key={index} src={src} index={index} />
             ))}
@@ -120,7 +120,7 @@ const MacoleensPharmacy = () => {
           className="border-b pb-12"
         >
           <h3 className="text-xl font-semibold mb-4">Manager</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center items-center gap-4">
             {imagesSource[0].Manager.sources.map((src, index) => (
               <ImageButton key={index} src={src} index={index} />
             ))}
@@ -135,7 +135,7 @@ const MacoleensPharmacy = () => {
           className="border-b pb-12"
         >
           <h3 className="text-xl font-semibold mb-4">Nurse</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center items-center gap-4">
             {imagesSource[0].Nurse.sources.map((src, index) => (
               <ImageButton key={index} src={src} index={index} />
             ))}
@@ -151,7 +151,7 @@ const MacoleensPharmacy = () => {
           className="border-b pb-12"
         >
           <h3 className="text-xl font-semibold mb-4">Pharmacist</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center items-center gap-4">
             {imagesSource[0].Pharmacist.sources.map((src, index) => (
               <ImageButton key={index} src={src} index={index} />
             ))}
@@ -166,7 +166,7 @@ const MacoleensPharmacy = () => {
           transition={{ duration: 0.6, delay: 0.12 }}
         >
           <h3 className="text-xl font-semibold mb-4">Cashier</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-items-center items-center gap-4">
             {imagesSource[0].Cashier.sources.map((src, index) => (
               <ImageButton key={index} src={src} index={index} />
             ))}

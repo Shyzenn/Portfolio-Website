@@ -126,7 +126,7 @@ const TechStack = () => {
         {Object.entries(techStack).map(([category, stack]) => (
           <div key={category}>
             <h2 className="font-semibold capitalize mb-4">{category}</h2>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
               {stack.map((item, index) => (
                 <div
                   key={index}
