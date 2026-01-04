@@ -57,14 +57,14 @@ const MacoleensPharmacy = () => {
   const ImageButton = ({ index, src }: { index: number; src: string }) => {
     return (
       <button
-        className="cursor-pointer w-70 h-50 relative"
+        className="cursor-pointer w-70 h-42 p-4 flex items-center justify-center rounded-md border"
         onClick={() => handleOpenModal(src)}
       >
         <Image
           src={src}
           alt={`Project image ${index + 1}`}
-          fill
-          className="object-cover rounded-md hover:transition-transform duration-300 hover:-translate-y-1 border p-4 shadow-md"
+          width={280}
+          height={280}
         />
       </button>
     );
