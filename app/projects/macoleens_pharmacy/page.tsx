@@ -26,7 +26,7 @@ const imagesSource = [
         "/project-images/manager/add-user.png",
         "/project-images/manager/user-management.png",
         "/project-images/manager/dashboard.png",
-        "/project-images/manager/audit-Log.png",
+        "/project-images/manager/audit-log.png",
       ],
     },
     nurse: {
